@@ -1,0 +1,65 @@
+th, td, p, input, h3 {
+    font:15px 'Segoe UI';
+}
+
+table, th, td {
+    border: solid 1px #ddd;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+
+th {
+    font-weight:bold;
+}
+
+table {
+    margin: 40px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, powderblue, pink);
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    box-shadow: 0px 0px 20px 10px #d7a1e7;
+}
+
+#buttons_container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 40px;
+}
+
+button {
+    margin: 10px 0px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    background-color:white;
+    color: pink;
+}
+
+@keyframes hov {
+    from {
+        background-color: white;
+        color: pink;
+    }
+    to {
+        background-color: pink;
+        color: white;
+    }
+}
+
+button:hover {
+    animation-name: hov;
+    animation-duration: 0.3s;
+    background-color: pink;
+    color: white;
+}

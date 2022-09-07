@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="script.js"></script>
+    <div id="buttons_container">    
+        <button onclick="restart()">Restart</button>
+        <button onclick="clear2()">Clear</button>
+        <button onclick="killles()"> Kill all scavengers</button>
+        <button onclick="spawnGrassEaters()"> Spawn grass eater</button>
+        <button onclick="spawnGrass()"> Spawn grass</button>
+        <button onclick="spawnLes()"> Spawn scavenger</button>
+        <button onclick="spawnPredator()"> Spawn Predator</button>
+    </div>
+    <div id="canv"></div>
+    <table>
+        <tr>
+            <th>Grass</th>
+            <th>GrassEaters</th>
+            <th>Predators</th>
+            <th>Scavengers</th>
+        </tr>
+        <tr>
+            <td id="grass">0</td>
+            <td id="grassEater">0</td>
+            <td id="predator">0</td>
+            <td id="les">0</td>
+        </tr>
+    </table>
+    <script src="stat.js"></script>
+</body>
+</html>
